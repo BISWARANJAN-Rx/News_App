@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/bbc2"
+            android:title="BBC"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/algeria"
+            android:title="Aljajera"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/cnn"
+            android:title="CNN"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/foxNewsFragment"
+            android:icon="@drawable/fox"
+            android:title="FOX News"
+            android:menuCategory="secondary"/>
+        <item
+            android:id="@+id/skyNewsFragment"
+            android:icon="@drawable/sky"
+            android:title="SKY News"
+            android:menuCategory="secondary"/>
+    </group>
+    <item android:title="Odia News"
+        android:menuCategory="secondary">
+        <menu>
+            <item
+                android:id="@+id/dharitri_fragment"
+                android:icon="@drawable/news"
+                android:title="Dharitri News" />
+        </menu>
+
+    </item>
+    <item android:title="Special GCEK"
+        android:menuCategory="secondary">
+        <menu>
+            <item
+                android:id="@+id/gcek_notice"
+                android:icon="@drawable/news"
+                android:title="Notice" />
+        </menu>
+
+    </item>
+    <item android:title="UpComing"
+        android:menuCategory="secondary">
+        <menu>
+            <item
+                android:id="@+id/ny"
+                android:icon="@drawable/algeria"
+                android:title="New York Time" />
+        </menu>
+
+    </item>
+</menu>

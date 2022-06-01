@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.newsapp.ui.home.HomeFragment"
+        android:label="BBC News"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_dharitri_fragment"
+            app:destination="@id/dharitri_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.newsapp.ui.gallery.GalleryFragment"
+        android:label="Aljajera"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.newsapp.ui.slideshow.SlideshowFragment"
+        android:label="CNN News"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/foxNewsFragment"
+        android:name="com.example.newsapp.fragments.fox_news_fragment"
+        android:label="FOX News"
+        tools:layout="@layout/fragment_fox_news_fragment" />
+    <fragment
+        android:id="@+id/skyNewsFragment"
+        android:name="com.example.newsapp.fragments.sky_news_fragment"
+        android:label="Sky News"
+        tools:layout="@layout/fragment_sky_news_fragment" />
+    <fragment
+        android:id="@+id/dharitri_fragment"
+        android:name="com.example.newsapp.fragments.dharitri_fragment"
+        android:label="Dharitri News"
+        tools:layout="@layout/fragment_dharitri_fragment" />
+    <fragment
+        android:id="@+id/gcek_notice"
+        android:name="com.example.newsapp.fragments.gcek_notice"
+        android:label="GCEK Notice"
+        tools:layout="@layout/fragment_gcek_notice" />
+</navigation>
